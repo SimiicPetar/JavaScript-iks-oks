@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.element{
+			height: 100px;
+			width: 100px;
+			border:solid thin black;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		var potez=0;
+
+		function xio(n){
+			var el=document.getElementById("d"+n);
+
+			if(potez%2==0)
+				el.style.backgroundImage='url("x.jpg")';
+			else
+				el.style.backgroundImage='url("o.jpg")';
+
+			potez++;
+			
+		}
+
+		
+	</script>
+</head>
+<body>
+	<table>
+
+		<tbody>
+		<tr>
+			<td ><div class="element" id="d1" onclick="xio(1);"/></td>
+			<td ><div class="element" id="d2" onclick="xio(2);"/></td>
+			<td ><div class="element" id="d3" onclick="xio(3);"/></td>
+		</tr>
+		<tr>
+			<td><div class="element" id="d4" onclick="xio(4);"/></td>
+			<td ><div class="element" id="d5" onclick="xio(5);"/></td>
+			<td ><div class="element" id="d6" onclick="xio(6);"/></td>
+		</tr>
+
+		<tr>
+			<td><div class="element" id="d7" onclick="xio(7);"/></td>
+			<td ><div class="element" id="d8" onclick="xio(8);"/></td>
+			<td ><div class="element" id="d9" onclick="xio(9);"/></td>
+		</tr>
+		</tbody>
+
+	</table>
+</body>
+</html>
